@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: ##959595;
+    background: #fafafa;
+    font-family: "Playfair Display", 'Georgia', serif;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+}
+    .active
+{
+  color:#CCDD11;
+}
+
+a {
+    color: orange;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.badge-info{
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1;
+    vertical-align: baseline;
+    white-space: nowrap;
+    text-align: center;
+    background-color: #999;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
