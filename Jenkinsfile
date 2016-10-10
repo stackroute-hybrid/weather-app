@@ -17,7 +17,7 @@ node {
   sh "(cd ~/jobs/stackroute-hybrid/jobs/weather-app/branches/master/workspace/server && node_modules/mocha/bin/mocha test)"
 
   //stage 'Packaging'
-//  sh "(cd ~/jobs/stackroute-hybrid/jobs/weather-app/branches/master/workspace/ && tar cvzf movie-app_build.tar.gz *)"
+//sh "(cd ~/jobs/stackroute-hybrid/jobs/weather-app/branches/master/workspace/ && tar cvzf movie-app_build.tar.gz *)"
 //   sh "pwd"
   //step([$class: 'ArtifactArchiver', artifacts: 'jobs/stackroute-hybrid/jobs/weather-app/branches/master/workspace/*.tar.gz', fingerprint: true])
 }
