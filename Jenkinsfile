@@ -3,8 +3,8 @@ node {
   git url: 'https://github.com/stackroute-hybrid/weather-app.git', branch: 'master'
 
   stage 'Installing  Dependencies'
-  sh "(cd ~/jobs/stackroute-hybrid/jobs/weather-app/branches/master/workspace/client && npm install --production)"
-  sh "(cd ~/jobs/stackroute-hybrid/jobs/weather-app/branches/master/workspace/server && npm install --production)"
+  sh "(cd ~/jobs/stackroute-hybrid/jobs/weather-app/branches/master/workspace/client && npm install)"
+  sh "(cd ~/jobs/stackroute-hybrid/jobs/weather-app/branches/master/workspace/server && npm install)"
 
   stage 'Browserify and Transpilation'
 
