@@ -13,7 +13,6 @@ var StoredWeather = React.createClass({
         object.splice(index,1);
       }
     })
-
 this.setState({data:this.state.data});
 
   },
