@@ -19,7 +19,7 @@ node {
   stage 'Packaging for deployment'
   sh "(cd ~/jobs/stackroute-hybrid/jobs/weather-app/branches/master/workspace/server && rm -r node_modules)"
   sh "mkdir dist -p"
-//  sh "cp -r {.dockerignore,docker-compose.yml,Dockerfile,server} dist && cd dist && tar cvzf weather-app-project_current.tar.gz *"
-  sh "cp -r {.dockerignore,docker-compose.yml,Dockerfile,server} dist && tar cvzf weather-app-project_current.tar.gz /dist"
+  sh "cp -r {.dockerignore,docker-compose.yml,Dockerfile,server} dist"
+  sh "cd dist && tar cvzf weather-app-project_current.tar.gz *"
   step([$class: 'ArtifactArchiver', artifacts: 'dist/*.tar.gz', fingerprint: true])
 }
