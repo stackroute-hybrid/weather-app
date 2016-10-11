@@ -16,8 +16,10 @@ node {
   stage 'Testing'
   sh "(cd ~/jobs/stackroute-hybrid/jobs/weather-app/branches/master/workspace/server && node_modules/mocha/bin/mocha test)"
 
-  //stage 'Packaging'
-//sh "(cd ~/jobs/stackroute-hybrid/jobs/weather-app/branches/master/workspace/ && tar cvzf movie-app_build.tar.gz *)"
-//   sh "pwd"
-  //step([$class: 'ArtifactArchiver', artifacts: 'jobs/stackroute-hybrid/jobs/weather-app/branches/master/workspace/*.tar.gz', fingerprint: true])
+  stage 'Packaging for deployment'
+  sh "(cd ~/jobs/stackroute-hybrid/jobs/weather-app/branches/master/workspace/server && rm node_modules rf)"
+  sh "mkdir dist -p"
+  sh "rsync -av --exclude='client' server dist"
+  sh "cp {.dockerignore,docker-compose.yml,Dockerfile,server} dist && cd dist && tar cvzf weather-app-project_current.tar.gz *"
+  step([$class: 'ArtifactArchiver', artifacts: 'dist/*.tar.gz', fingerprint: true])
 }
