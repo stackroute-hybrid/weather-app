@@ -71,6 +71,5 @@ describe("Testing the /weather route", function(err){
           res.body.should.have.property('message').eql('Weather successfully deleted');
           done();
         });
-
   });
 });
