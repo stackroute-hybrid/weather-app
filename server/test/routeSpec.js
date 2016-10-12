@@ -2,7 +2,6 @@ var should = require("chai").should(),
 supertest = require("supertest"),
 app = require("../app");
 
-
 describe("Testing the /index route", function(err){
   it("should handle the request", function(done){
     supertest(app)
