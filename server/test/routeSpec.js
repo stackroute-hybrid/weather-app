@@ -53,7 +53,7 @@ describe("Testing the /weather route", function(err){
             })
         .end(function(err,res,body){
           should.not.exist(err);
-          res.text.should.be.equal("Weathersss Saved Sucessfully");
+          res.text.should.be.equal("Weathers Saved Sucessfully");
           done();
         });
 
