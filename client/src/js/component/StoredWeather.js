@@ -33,7 +33,7 @@ this.setState({data:this.state.data});
 
   componentDidMount:function(){
     $.ajax({
-      url: 'http://localhost:8080/weather/getStoredWeather',
+      url: '/weather/getStoredWeather',
       method:'GET',
       dataType: 'json',
       cache: false,

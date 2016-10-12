@@ -6,7 +6,7 @@ var StoredWeatherWidget=React.createClass(
         handleDeleteButtonClick:function(){
           var deleteHandler = this.props.deleteCallback;
           $.ajax({
-                      url: 'http://localhost:8080/weather/delete/'+this.props.storedWeatherData._id,
+                      url: '/weather/delete/'+this.props.storedWeatherData._id,
                       type: 'DELETE',
                       cache: false,
                       success: function(d) {

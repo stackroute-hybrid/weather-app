@@ -21,7 +21,7 @@ var WeatherWidget=React.createClass(
               lat:this.props.weatherObj.city.coord.lat
               };
           $.ajax({
-                      url: 'http://localhost:8080/weather/save',
+                      url: '/weather/save',
                       type: 'POST',
                       data:jsonData,
                       cache: false,
