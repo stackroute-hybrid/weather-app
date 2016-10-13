@@ -16,7 +16,7 @@ describe("Testing the /index route", function(err){
         });
   });
 });
-
+/*
 describe("Testing the /weather route", function(err){
  it("should handle the JSON data", function(done){
     supertest(app)
@@ -29,7 +29,8 @@ describe("Testing the /weather route", function(err){
         });
 
   });
-
+  */
+/*
   it("should save the JSON data", function(done){
     supertest(app)
         .post("/weather/save")
@@ -56,7 +57,7 @@ describe("Testing the /weather route", function(err){
           done();
         });
 
-  });
+  });*/
 
 
   it("should delete the JSON data", function(done){
