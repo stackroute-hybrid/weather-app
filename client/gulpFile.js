@@ -21,7 +21,6 @@ gulp.task('copy',function(){
    gulp.src('src/js/vendors/*.*')
        .pipe(gulp.dest('../server/dist/js'));
 });
-
 gulp.task('default',['browserify','copy'],function(){
    return gulp.watch('src/**/*.*',['browserify','copy']);
 });
