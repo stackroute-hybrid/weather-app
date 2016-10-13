@@ -11,7 +11,7 @@ describe("Testing the /index route", function(err){
           if (err) {
 				        throw err;
 			    }
-          res.text.should.be.equal("Hello from weather app");
+          res.text.should.be.equal("Hellos from weather app");
           done();
         });
   });
