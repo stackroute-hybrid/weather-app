@@ -16,6 +16,7 @@ node {
   stage 'Testing'
   sh "(cd ~/jobs/stackroute-hybrid/jobs/weather-app/branches/master/workspace/server && node_modules/mocha/bin/mocha test)"
 
+
   stage 'Packaging for deployment'
   sh "(cd ~/jobs/stackroute-hybrid/jobs/weather-app/branches/master/workspace/server && rm -r node_modules)"
   sh "mkdir dist -p"

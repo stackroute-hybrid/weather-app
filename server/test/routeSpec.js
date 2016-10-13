@@ -16,9 +16,9 @@ describe("Testing the /index route", function(err){
         });
   });
 });
-/*
+
 describe("Testing the /weather route", function(err){
- it("should handle the JSON data", function(done){
+ /*it("should handle the JSON data", function(done){
     supertest(app)
         .get("/weather/getStoredWeather")
         .expect(200)
@@ -29,8 +29,7 @@ describe("Testing the /weather route", function(err){
         });
 
   });
-  */
-/*
+
   it("should save the JSON data", function(done){
     supertest(app)
         .post("/weather/save")
