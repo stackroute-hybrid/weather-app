@@ -5,7 +5,6 @@ Global dependencies:
 node
 mongodb
 gulp
-
 Github URL: https://github.com/stackroute-hybrid/weather-app
 To run the application:
 
