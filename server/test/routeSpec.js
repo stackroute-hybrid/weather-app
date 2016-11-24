@@ -11,7 +11,7 @@ describe("Testing the /index route", function(err){
           if (err) {
 				        throw err;
 			    }
-          res.text.should.be.equal("Hello from weather app");
+          res.text.should.be.equal("Hellos from weather app");
           done();
         });
   });
@@ -52,7 +52,7 @@ describe("Testing the /weather route", function(err){
              })
          .end(function(err,res,body){
            should.not.exist(err);
-           res.text.should.be.equal("Weather Saved Sucessfully");
+           res.text.should.be.equal("SWeather Saved Sucessfully");
            done();
          });
 
