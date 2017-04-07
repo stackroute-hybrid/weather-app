@@ -3,6 +3,7 @@
 React.js application to search and display weather information.
 
 Updated for Wave 17
+
 Global dependencies:
 node
 mongodb
